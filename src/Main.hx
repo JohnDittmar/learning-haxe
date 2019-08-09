@@ -6,15 +6,7 @@ class Main extends hxd.App {
 
 	override function init() {
 		bmp = new h2d.Bitmap(hxd.Res.bugs.toTile(), s2d);
-		shader = new SineDeformShader();
-		shader.speed = 1;
-		shader.amplitude = .1;
-		shader.frequency = .5;
-		shader.texture = bmp.tile.getTexture();
-		bmp.addShader(shader);
-		hxd.Window.getInstance().addEventTarget(onEvent);
-
-		
+		hxd.Window.getInstance().addEventTarget(onEvent);		
 	}
 
 	function onEvent(event:hxd.Event) {
@@ -29,19 +21,8 @@ class Main extends hxd.App {
 
 	// on each frame
 	override function update(dt:Float) {
-		//
-		var mul:Float = 10;
 		if (Key.isDown(Key.W)) {
-			shader.speed = 0.2;
-		}
-		if (Key.isDown(Key.S)) {
-			shader.speed = 2;
-		}
-		if (Key.isDown(Key.A)) {
-			shader.amplitude += 0.1 / mul;
-		}
-		if (Key.isDown(Key.D)) {
-			shader.amplitude -= 0.1 / mul;
+			// Placeh-holder
 		}
 	}
 
