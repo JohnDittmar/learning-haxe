@@ -1,0 +1,21 @@
+version: '2'
+
+tasks:
+  default:
+    deps: [build]
+    cmds:
+      - hl bin/game.hl
+
+  build:
+    cmds:
+      - haxe build.hxml
+    sources:
+      - ./src/*.hx
+    generates:
+      - bin/game.hl
+    method: 
+      checksum
+
+  run:
+    cmds:
+      - hl bin/game.hl

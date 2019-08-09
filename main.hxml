@@ -1,0 +1,11 @@
+-lib heaps
+-lib hlsdl
+-p src/
+-hl bin/game.hl
+-main Main
+
+
+# -lib heaps
+# -js hello.js
+# -main Main
+# -debug
