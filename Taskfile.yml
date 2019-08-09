@@ -2,7 +2,7 @@ version: '2'
 
 tasks:
   default:
-    deps: [build]
+    deps: [run]
     cmds:
       - hl bin/game.hl
 
@@ -17,5 +17,6 @@ tasks:
       checksum
 
   run:
+    deps: [build]
     cmds:
       - hl bin/game.hl
