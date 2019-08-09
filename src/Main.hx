@@ -2,7 +2,6 @@ import hxd.Key;
 
 class Main extends hxd.App {
 	var bmp:h2d.Bitmap;
-	var shader:SineDeformShader;
 
 	override function init() {
 		bmp = new h2d.Bitmap(hxd.Res.bugs.toTile(), s2d);
