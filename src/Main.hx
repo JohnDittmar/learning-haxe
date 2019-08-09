@@ -48,7 +48,11 @@ class Main extends hxd.App {
 	// on each frame
 	override function update(dt:Float) {
 		if (Key.isDown(Key.W)) {
-			// shadow.power += 1;
+			skellyboi.rotate(0.02);
+		}
+
+		if (Key.isDown(Key.S)) {
+			skellyboi.rotate(-0.02);
 		}
 	}
 
